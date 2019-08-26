@@ -7,9 +7,6 @@ document.body.appendChild(imgBackgroud);
 var divLevel = document.createElement("div");
 divLevel.id = "divLevel";
 document.body.appendChild(divLevel);
-var imgLevel = document.createElement("img");
-imgLevel.id = "imgLevel";
-  divLevel.appendChild(imgLevel);
   divLevel.style.position = "absolute";
   divLevel.style.zIndex = 1;
   divLevel.style.top = "95px";
@@ -18,7 +15,6 @@ imgLevel.id = "imgLevel";
 var index;
   for (var index = 0; index <= 9; index++) {
   var imgLevel = document.createElement("img");
-  imgLevel.id = "imgLevel"; 
   divLevel.appendChild(imgLevel);
   imgLevel.style.border = "1px solid #3eff03";
   imgLevel.style.margin = "5px";
