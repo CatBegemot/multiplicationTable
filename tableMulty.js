@@ -12,8 +12,8 @@ imgLevel.id = "imgLevel";
   divLevel.appendChild(imgLevel);
   divLevel.style.position = "absolute";
   divLevel.style.zIndex = 1;
-  divLevel.style.top = "100px";
-  divLevel.style.left = "100px";
+  divLevel.style.top = "95px";
+  divLevel.style.left = "95px";
   
 var index;
   for (var index = 0; index <= 9; index++) {
@@ -21,7 +21,8 @@ var index;
   imgLevel.id = "imgLevel"; 
   divLevel.appendChild(imgLevel);
   imgLevel.style.border = "1px solid #3eff03";
-  imgLevel.style.left = (45*index + 20) +"px";
+  imgLevel.style.margin = "5px";
+  imgLevel.style.left = (45*index) +"px";
   imgLevel.src = imgPath +  "dig" + index + ".png";
 }
 
