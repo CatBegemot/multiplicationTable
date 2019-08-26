@@ -1,31 +1,30 @@
 ﻿var imgBackgroud = document.createElement("img");
 imgBackgroud.id = "imgBackgroud";
 document.body.appendChild(imgBackgroud);
-imgBackgroud.style.zIndex = 0;
-imgBackgroud.src = imgPath + "kletka.png";
+  imgBackgroud.style.zIndex = 0;
+  imgBackgroud.src = imgPath + "kletka.png";
 
 var divLevel = document.createElement("div");
 divLevel.id = "divLevel";
 document.body.appendChild(divLevel);
 var imgLevel = document.createElement("img");
 imgLevel.id = "imgLevel";
-divLevel.appendChild(imgLevel);
-  
+  divLevel.appendChild(imgLevel);
   divLevel.style.position = "absolute";
   divLevel.style.zIndex = 1;
-  divLevel.style.border = "1px solid #3eff03";
   divLevel.style.top = "100px";
   divLevel.style.left = "100px";
-    
-var item = document.getElementsByClassName("dig");
-var i;
-for (i = 0; i < item.length; i++) {
-  item[i].style.left = 45 * i + 10;
-  item[i].src = imgLevel.src (imgPath + "dig[i].png");
+  
+var index;
+  for (var index = 0; index <= 9; index++) {
+  var imgLevel = document.createElement("img");
+  imgLevel.id = "imgLevel"; 
+  divLevel.appendChild(imgLevel);
+  imgLevel.style.border = "1px solid #3eff03";
+  imgLevel.style.left = (45*index + 20) +"px";
+  imgLevel.src = imgPath +  "dig" + index + ".png";
 }
 
-
-  
 var divMain = document.createElement("div");
 divMain.id = "divMain";
 document.body.appendChild(divMain);
@@ -34,7 +33,7 @@ document.body.appendChild(divMain);
   divMain.style.top = "200px";
   divMain.style.left = "100px";
   divMain.style.border = "1px solid #3eff03";
-  
+
 var divSelector = document.createElement("div");
 divSelector.id = "divSelector";
 document.body.appendChild(divSelector);
@@ -45,7 +44,7 @@ document.body.appendChild(divSelector);
   divSelector.style.border = "1px solid #3eff03";
 
 var divScore = document.createElement("div");
-divScore.id = "divScore"; 
+divScore.id = "divScore";
 document.body.appendChild(divScore);
   divScore.style.position = "absolute";
   divScore.style.zIndex = 1;
