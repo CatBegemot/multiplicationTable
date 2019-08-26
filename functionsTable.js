@@ -1,20 +1,6 @@
 function startTabl() {
     var viz = document.getElementById("imgLevel");
     viz.style.visibility = "visible";
-    
-  var elem = document.getElementById("imgLevel");   
-    var pos = 100;
-    var id = setInterval(frame, 1);
-    function frame() {
-      if (pos == 600) {
-        clearInterval(id);
-      } else {
-        pos++; 
-        elem.style.left = pos + "50px"; 
-        }
-      }
-  }
-
 switch(imgLevel) {
   case "dig0.png":
     return 0;
