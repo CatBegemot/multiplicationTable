@@ -10,20 +10,23 @@ document.body.appendChild(divLevel);
 var textBegin = document.createElement("p");
   textBegin.id = "textBegin";
   divLevel.appendChild(textBegin);
-  textBegin.style.fontFamily = "Mistral";
+  textBegin.style.fontFamily = "Arial"; 
+  textBegin.style.fontStyle = "Italic"; 
+  textBegin.style.fontSize = "30px";
   textBegin.zIndex = 1;
   textBegin.style.position = "absolute";
-  textBegin.style.top = "-45px";
+  textBegin.style.top = "-85px";
+  textBegin.style.left = "15px";
   textBegin.style.color = "darkblue";
-  textBegin.style.fontsize = "60px";
   textBegin.innerHTML = "It`s a test for multiplication table";
+
 var imgLevel = document.createElement("img");
 imgLevel.id = "imgLevel";
   divLevel.appendChild(imgLevel);
   divLevel.style.position = "absolute";
   divLevel.style.zIndex = 1;
-  divLevel.style.top = "95px";
-  divLevel.style.left = "95px";
+  divLevel.style.top = "100px";
+  divLevel.style.left = "80px";
  
 var index;
   for (var index = 0; index <= 9; index++) {
@@ -39,21 +42,28 @@ divMain.id = "divMain";
 document.body.appendChild(divMain);
   divMain.style.position = "absolute";
   divMain.style.zIndex = 1;
-  divMain.style.top = "200px";
-  divMain.style.left = "100px";
+  divMain.style.top = "160px";
+  divMain.style.left = "95px";
+
 var textChoise = document.createElement("p");
   textChoise.id = "textChoise";
   divMain.appendChild(textChoise);
-  textChoise.style.fontFamily = "Mistral";
+  textChoise.style.fontFamily = "Arial";
+  textChoise.style.fontStyle = "Italic";
   textChoise.style.color = "darkblue";
+  textChoise.style.fontSize = "30px";
   textChoise.innerHTML = "Choose the value of the first factor";
-
 
 var imgMainMulty = document.createElement("img");
   divMain.appendChild(imgMainMulty);
 
-imgLevel.onclick = function() {getNum(imgMainMulty)};
-  imgMainMulty.src = imgPath + "case"; 
+  for (var index = 0; index <= 9; index++) {
+    imgLevel.onclick = function() {getNum(imgMainMulty)};
+  imgMainMulty.src = imgPath + "case";   
+      
+    }
+
+
   
 
 var divSelector = document.createElement("div");
