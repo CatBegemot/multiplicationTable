@@ -1,37 +1,38 @@
 function getNum() {
   
-var imgLevel = document.createElement("img");
+var Lvl;
+  var imgLevel = document.createElement("img");
   divLevel.appendChild(imgLevel);
 switch(imgLevel) {
  case "dig0.png":
-  return 0;
+  Lvl=0;
   break;
  case "dig1.png":
-  return 1;
+  Lvl=1;
   break;
  case "dig2.png":
-  return 2;
+  Lvl=2;
   break;
  case "dig3.png":
-  return 3;
+  Lvl=3;
   break;
  case "dig4.png":
-  return 4;
+  Lvl=4;
   break;
  case "dig5.png":
-  return 5;
+  Lvl=5;
   break;
  case "dig6.png":
-  return 6;
+  Lvl=6;
   break;
  case "dig7.png":
-  return 7;
+  Lvl=7;
   break;
  case "dig8.png":
-  return 8;
+  Lvl=8;
   break;
  case "dig9.png":
-  return 9;
+  Lvl=9;
   break;
 }
 
