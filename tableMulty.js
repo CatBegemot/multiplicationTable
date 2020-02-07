@@ -50,7 +50,7 @@ document.body.appendChild(divMain);
   var Lvl = document.createElement("img");
   divMain.appendChild(imgChoiseDigital);
   imgLevel.onclick = function() {getNum(imgChoiseDigital)};
-  imgChoiseDigital.src = imgPath + "dig" + "Lvl" + ".png";
+  imgChoiseDigital.src = imgPath + "dig" + Lvl + ".png";
   
 // var textChoice = document.createElement("p"); // for test
 //   textChoice.id = "textChoice";
